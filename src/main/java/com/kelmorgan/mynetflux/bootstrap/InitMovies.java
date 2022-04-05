@@ -7,8 +7,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
 
-@RequiredArgsConstructor
 @Component
+@RequiredArgsConstructor
 public class InitMovies implements CommandLineRunner {
 
     private final MovieRepository movieRepository;
@@ -22,4 +22,5 @@ public class InitMovies implements CommandLineRunner {
                                 .flatMap(movieRepository::save)
                 ).subscribe(null,null,()->movieRepository.findAll().subscribe(System.out::println));
     }
+
 }
