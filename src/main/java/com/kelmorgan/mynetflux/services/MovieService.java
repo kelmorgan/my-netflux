@@ -6,7 +6,7 @@ import reactor.core.publisher.Mono;
 
 public interface MovieService {
 
-    Mono<Movie> getMovies (String id);
+    Mono<Movie> getMoviesById(String id);
 
     Flux<Movie> getAllMovies();
 }

@@ -14,7 +14,7 @@ public class MovieServiceImpl implements MovieService {
     private final MovieRepository movieRepository;
 
     @Override
-    public Mono<Movie> getMovies(String id) {
+    public Mono<Movie> getMoviesById(String id) {
         return movieRepository.findById(id);
     }
 
