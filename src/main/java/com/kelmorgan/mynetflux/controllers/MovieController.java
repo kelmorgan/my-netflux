@@ -3,7 +3,6 @@ package com.kelmorgan.mynetflux.controllers;
 import com.kelmorgan.mynetflux.domain.Movie;
 import com.kelmorgan.mynetflux.services.MovieService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
